@@ -1,0 +1,41 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="/js"></script>
+    <style>
+#div1, #div2, #div3 {
+  float: left;
+  width: 100px;
+  min-height: 35px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+</style>
+</head>
+
+<body>
+    <h1>Drag and drop - Carro de compras</h1>
+    <form id="crear">
+        <label>Nombre</label>
+        <input type="text" name="destarea" id="destarea" required />
+        <button>Enviar</button>
+    </form>
+    
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="img_w3slogo.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+</div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+</body>
+
+</html>
